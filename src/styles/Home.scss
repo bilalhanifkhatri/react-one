@@ -62,6 +62,8 @@
     height: 100vh;
 
     > p {
+      width: 100%;
+      text-align: justify;
       color: $first;
       letter-spacing: 2px;
       word-spacing: 5px;
@@ -82,6 +84,92 @@
     height: 100vh;
     background-color: $first;
     border-radius: 0 200px 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > h1 {
+      text-transform: uppercase;
+      border-bottom: 2px solid $dark;
+      padding: 0.5rem;
+      width: 20rem;
+      text-align: center;
+      color: $dark;
+    }
+
+    > p {
+      padding: 5rem;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      font: italic 100 1.2rem $text2;
+      line-height: 170%;
+      text-align: justify;
+    }
+  }
+}
+
+.home4 {
+  width: 100%;
+  height: 100vh;
+  background-color: $second;
+  display: flex;
+  justify-content: flex-end;
+
+  > div {
+    background-color: $third;
+    border-radius: 200px 0 0 200px;
+    width: 70%;
+    height: 70vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > h1 {
+      color: $first;
+      width: 140px;
+      border-bottom: 2px solid $first;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    > article {
+      display: flex;
+      margin: 2px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      > div {
+        animation: imgUp 0.7s linear infinite alternate;
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+        background-color: $first;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $dark;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          filter: invert(1);
+        }
+
+        > svg {
+          font-size: 4rem;
+        }
+
+        > p {
+          font: 900 1.2rem $text2;
+        }
+      }
+    }
   }
 }
 
